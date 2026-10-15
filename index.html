@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calistenia Power - Grupo 562</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header>
+<h1>CALISTENIA POWER</h1>
+<p>Domina tu cuerpo - Grupo 562 Plantel 16 Tláhuac</p>
+</header>
+
+<nav>
+<a href="index.html"><button>Inicio</button></a>
+<a href="producto.html"><button>Rutinas</button></a>
+<a href="beneficios.html"><button>Beneficios</button></a>
+<a href="contacto.html"><button>Contacto</button></a>
+<a href="pedido.html"><button>Registro</button></a>
+</nav>
+
+<main>
+<section>
+<h2>CALISTENIA POWER: DOMINA TU CUERPO</h2>
+<h3>calistenia sin limites</h3>
+
+<img src="imagenes/calistenia.jpeg" width="350" alt="Calistenia Power" onerror="this.onerror=null; this.src='calistenia.jpeg'; this.onerror=function(){this.src='../calistenia.jpeg'}">
+
+<p style="margin-top:12px;">Tu cuerpo es tu gimnasio. Proyecto Grupo 562 .</p>
+
+<button id="btnMotivacion" style="margin-top:10px;">Dame motivación</button>
+<p id="frase" style="color:#c41e3a;font-weight:bold;margin-top:10px;"></p>
+
+</section>
+</main>
+
+<footer>
+<p>&copy; 2026 Calistenia Power Grupo 562</p>
+</footer>
+
+<script>
+const frases=["¡Tu cuerpo es tu gym!","Disciplina = Libertad","¡Un rep más!","No pain, no gain","Domina tu mente, domina tu cuerpo"];
+document.getElementById("btnMotivacion").onclick=()=>{
+document.getElementById("frase").innerText=frases[Math.floor(Math.random()*frases.length)];
+};
+</script>
+
+</body>
+</html>
