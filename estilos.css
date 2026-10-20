@@ -1,36 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contacto - CALISTENIA POWER</title>
-<link rel="stylesheet" href="estilos.css">
-</head>
-<body>
-<header>
-<h1>CALISTENIA POWER</h1>
-<nav>
-<a href="index.html">Inicio</a>
-<a href="producto.html">Rutinas</a>
-<a href="beneficios.html">Beneficios</a>
-<a href="contacto.html">Contacto</a>
-<a href="pedido.html">Registro</a>
-</nav>
-</header>
- 
-<section class="content" style="padding:20px; text-align:center;">
-<img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64" alt="Contacto" style="width:100%; max-height:350px; object-fit:cover; border-radius:15px; margin-bottom:20px;">
- 
-<h2 style="color:#c41e3a;">Contacto - Plantel 16 Tláhuac Grupo 562</h2>
-<p>¿Tienes dudas sobre tu rutina? ¿Quieres entrenar con nosotros en el Plantel 16?</p>
-<p><b>CALISTENIA POWER</b> - Kevin Noriq - Sin excusas, tu cuerpo es tu gimnasio</p>
- 
-<form style="max-width:400px; margin:20px auto; display:flex; flex-direction:column; gap:10px;">
-<input type="text" placeholder="Tu nombre completo" required>
-<input type="email" placeholder="Tu correo del plantel" required>
-<input type="text" placeholder="Grupo - Ej: 562">
-<textarea placeholder="¿En qué te ayudamos? Ej: Quiero rutina básica..." rows="4" required></textarea>
-<button type="submit" style="background:#c41e3a; color:white; padding:10px; border:none; border-radius:8px; cursor:pointer;">Enviar Mensaje</button>
-</form>
- 
-<p style="margin-top:20px; font-size:14px;">📍 Plantel 16 Tláhuac, CDMX - Entrenamos en las barras del patio<br>📧
-tiene menú contextual
+.cards{display:flex; gap:15px; flex-wrap:wrap; justify-content:center; padding:15px}
+.card{width:300px; background:#111; border:2px solid #c41e3a; border-radius:12px; color:white; overflow:hidden}
+.card img{width:100%; height:190px; object-fit:cover}
+.card h3{color:#c41e3a; margin:10px}
+.card p{margin:0 10px 15px; font-size:14px}
+.hero{display:flex; gap:15px; padding:15px; align-items:center}
+.hero img{width:50%; border-radius:12px}
