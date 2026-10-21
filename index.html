@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CALISTENIA POWER - Grupo 562 Plantel 16 Tláhuac</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calistenia Power - Grupo 562</title>
 <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 <header>
 <h1>CALISTENIA POWER</h1>
-<nav>
-<a href="index.html">Inicio</a>
-<a href="producto.html">Rutinas</a>
-<a href="beneficios.html">Beneficios</a>
-<a href="contacto.html">Contacto</a>
-<a href="pedido.html">Registro</a>
-</nav>
+<p>Domina tu cuerpo - Grupo 562 Plantel 16 Tláhuac</p>
 </header>
-<section class="hero">
-<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e" alt="Inicio">
-<div>
-<h2>Tu cuerpo es tu gimnasio</h2>
-<p><b>Grupo 562 Plantel 16 Tláhuac</b> - Calistenia sin límites. Domina tu cuerpo sin equipo caro.</p>
-</div>
+
+<nav>
+<a href="index.html"><button>Inicio</button></a>
+<a href="producto.html"><button>Rutinas</button></a>
+<a href="beneficios.html"><button>Beneficios</button></a>
+<a href="contacto.html"><button>Contacto</button></a>
+<a href="pedido.html"><button>Registro</button></a>
+</nav>
+
+<main>
+<section>
+<h2>CALISTENIA POWER: DOMINA TU CUERPO</h2>
+<h3>calistenia sin limites</h3>
+
+<img src="imagenes/calistenia.jpeg" width="350" alt="Calistenia Power" onerror="this.onerror=null; this.src='calistenia.jpeg'; this.onerror=function(){this.src='../calistenia.jpeg'}">
+
+<p style="margin-top:12px;">Tu cuerpo es tu gimnasio. Proyecto Grupo 562 .</p>
+
+<button id="btnMotivacion" style="margin-top:10px;">Dame motivación</button>
+<p id="frase" style="color:#c41e3a;font-weight:bold;margin-top:10px;"></p>
+
 </section>
-<footer>© Kevin Noriq 2026 - Plantel 16 Tláhuac</footer>
+</main>
+
+<footer>
+<p>&copy; 2026 Calistenia Power Grupo 562</p>
+</footer>
+
+<script>
+const frases=["¡Tu cuerpo es tu gym!","Disciplina = Libertad","¡Un rep más!","No pain, no gain","Domina tu mente, domina tu cuerpo"];
+document.getElementById("btnMotivacion").onclick=()=>{
+document.getElementById("frase").innerText=frases[Math.floor(Math.random()*frases.length)];
+};
+</script>
+
 </body>
 </html>
